@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+</head>
+<body>
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <label id="name-label">Name<input type="text" id="name" name="name" placeholder="Enter your name" required/></label>
+      <label id="email-label">Email<input type="email" id="email" name="email" placeholder="Enter your email" required/></label>
+      <label id="number-label">Age (optiona)<input type="number" id="number" name="age" min="10" max="99" placeholder="Age"/></label>
+      <select id="dropdown">
+        <label>Which option best describes your current role?</label>
+        <option>Select current role</option>
+        <option>Student</option>
+        <option>Teacher</option>
+        <option>Parent</option>
+      </select>
+      <fieldset>
+        <label>Would you recommend us?</label>
+        <label><input type="radio" name="recomend" value="definitely"/> Definitely</label>
+        <label><input type="radio" name="recomend" value="maybe"/> Maybe</label>
+        <label><input type="radio" name="recomend" value="no"/> Not sure</label>
+      </fieldset>
+      <fieldset>
+        <label>What would you like to see improved? (Check all that apply)</label>
+        <label><input type="checkbox" value="front"/> Front-end projects</label>
+        <label><input type="checkbox" value="back"/> Back-end projects</label>
+        <label><input type="checkbox" value="challenge"/> Challenge</label>
+      </fieldset>
+        <label>Any comment or suggestion:</label>
+      <textarea rows="3" cols="30" placeholder="Enter your comment here">
+      </textarea>
+      <button id="submit">Submit</button>
+    </form>
+</body>
+</html>
