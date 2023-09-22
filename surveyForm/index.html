@@ -4,14 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <main>
+    <h1 id="title">FreeCodeCamp Survey Form</h1>
     <p id="description">Thank you for taking the time to help us improve the platform</p>
     <form id="survey-form">
-      <label id="name-label">Name<input type="text" id="name" name="name" placeholder="Enter your name" required/></label>
-      <label id="email-label">Email<input type="email" id="email" name="email" placeholder="Enter your email" required/></label>
-      <label id="number-label">Age (optiona)<input type="number" id="number" name="age" min="10" max="99" placeholder="Age"/></label>
+
+      <div class="text-inputs">
+        <fieldset class="name-field">
+          <label id="name-label" for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required />
+        </fieldset>
+
+        <fieldset class="email-field">
+          <label id="email-label" for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required/>
+        </fieldset>
+
+        <fieldset class="age-field">
+          <label id="number-label" for="age">Age (optional):</label>
+          <input type="number" id="number" name="age" min="10" max="99" placeholder="Age"/>
+        </fieldset>
+      </div>
+
       <select id="dropdown">
         <label>Which option best describes your current role?</label>
         <option>Select current role</option>
@@ -19,11 +36,20 @@
         <option>Teacher</option>
         <option>Parent</option>
       </select>
-      <fieldset>
-        <label>Would you recommend us?</label>
-        <label><input type="radio" name="recomend" value="definitely"/> Definitely</label>
-        <label><input type="radio" name="recomend" value="maybe"/> Maybe</label>
-        <label><input type="radio" name="recomend" value="no"/> Not sure</label>
+      <fieldset class="recommend-field">
+        <label id="recommend-title">Would you recommend us?</label>
+        <label class="recommend-field-label">
+          <input type="radio" name="recomend" value="definitely"/>
+          Definitely
+        </label>
+        <label class="recommend-field-label">
+          <input type="radio" name="recomend" value="maybe"/>
+          Maybe
+        </label>
+        <label class="recommend-field-label">
+          <input type="radio" name="recomend" value="no"/>
+          Not sure
+        </label>
       </fieldset>
       <fieldset>
         <label>What would you like to see improved? (Check all that apply)</label>
@@ -36,5 +62,6 @@
       </textarea>
       <button id="submit">Submit</button>
     </form>
+  </main>
 </body>
 </html>

@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-family: Helvetica, sans-serif;
+}
+
+main {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 96%;
+}
+p {
+  margin: 15px auto;
+}
+#survey-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  width: 260px;
+  height: 30px;
+  margin: 10px auto;
+}
+#dropdown {
+  width: 260px;
+  height: 30px;
+  margin: 10px auto;
+}
+
+.recommend-field-label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 120px;
+}
+.recommend-field-label input {
+  width: 30px;
+}
