@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Programming Language</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <nav id="navbar">
+    <header>
+      <h1>Basic Programming Language Technical Documentation</h1>
+    </header>
+    <div>
+      <a href="#Introduction" class="nav-link">Introduction</a>
+      <a href="#Data_Types" class="nav-link">Data Types</a>
+      <a href="#Variables" class="nav-link">Variables</a>
+      <a href="#Operators" class="nav-link">Operators</a>
+      <a href="#Control_Structures" class="nav-link">Control Structures</a>
+      <a href="#Functions" class="nav-link">Functions</a>
+      <a href="#Input_and_Output" class="nav-link">Input and Output</a>
+      <a href="#Comments" class="nav-link">Comments</a>
+      <a href="#Example_Program" class="nav-link">Example Program</a>
+
+    </div>
+  </nav>
+  
+  <main id="main-doc">
+
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+
+      <p>The Basic Programming Language is a simple programming language designed for learning the fundamentals of programming. It provides basic constructs for performing tasks and calculations.</p>
+    </section>
+
+    <section class="main-section" id="Data_Types">
+      <header>Data Types</header>
+      <h3>Basic Programming Language supports the following data types:</h3>
+      <ul>
+        <li>Integer: Whole numbers (e.g., 42)</li>
+        <li>Float: Numbers with decimal points (e.g., 3.14)</li>
+        <li>String: Text data (e.g., "Hello, World!")</li>
+        <li>Boolean: True or False</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <p>Variables are used to store data. They must be declared before use.</p>
+      <code>
+        INTEGER age
+        age = 25
+      </code>
+    </section>
+
+    <section class="main-section" id="Operators">
+      <header>Operators</header>
+      <p>Basic Programming Language supports the following operators:</p>
+      <ul>
+        <li><p>Arithmetic: +, -, *, /, %</p></li>
+        <li><p>Comparison: =, <, >, <=, >=, <></p></li>
+        <li><p>Logical: AND, OR, NOT</p></li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Control_Structures">
+      <header>Control Structures</header>
+
+      <h3>CONDITIONAL STATEMENTS</h3>
+      <h5>IF...THEN...ELSE</h5>
+      <code>
+        IF x > 10 THEN
+          PRINT "x is greater than 10"
+        ELSE
+          PRINT "x is not greater than 10"
+        END IF
+      </code>
+
+      <h3>Loops</h3>
+      <h5>FOR loop</h5>
+      <code>
+        FOR i = 1 TO 10
+          PRINT i
+        NEXT i
+      </code>
+    </section>
+
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <p>Functions are used to group and reuse code.</p>
+      <code>
+        FUNCTION greet(name)
+          PRINT "Hello, " + name + "!"
+        END FUNCTION
+
+        greet("Alice")
+      </code>
+    </section>
+
+    <section class="main-section" id="Input_and_Output">
+      <header>Input and Output</header>
+      <p><strong>PRINT</strong> is used to display output.</p>
+      <p><strong>INPUT</strong> is used to accept input from the user.</p>
+    </section>
+
+    <section class="main-section" id="Comments">
+      <header>Comments</header>
+      <p>Comments are ignored by the interpreter and are used for adding explanations to the code.</p>
+      <code>
+        REM This is a comment
+      </code>
+    </section>
+
+    <section class="main-section" id="Example_Program">
+      <header>Example Program</header>
+      <p>Here's a simple program that calculates the square of a number:</p>
+      <code>
+        INTEGER number, square
+
+        INPUT "Enter a number: ", number
+        square = number * number
+        PRINT "The square of " + number + " is " + square
+      </code>
+    </section>
+
+    <p>This technical documentation provides a basic overview of the Basic Programming Language. In practice, real programming languages have additional features, libraries, and capabilities to handle more complex tasks and applications.</p>
+  </main>
+</body>
+</html>
